@@ -3,9 +3,8 @@ def prime?(num)
     false
   elsif n == 2
     true
-  else div in 2..num/2
-   if (num % div) == 0
-    return false
+  else (2..n/2).none? { |i| n % i == 0}
+    false
    end
   end
 end
